@@ -7,5 +7,7 @@
   "Загрузка": "Loading...",
   "Страница не найдена": "Page not found",
   "Произошла непредвиденная ошибка": "An unexpected error occurred",
-  "Обновить страницу": "Refresh the page"
+  "Обновить страницу": "Refresh the page",
+  "увеличить": "increment",
+  "уменьшить": "decrement"
 }
