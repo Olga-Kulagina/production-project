@@ -9,5 +9,7 @@
   "Произошла непредвиденная ошибка": "An unexpected error occurred",
   "Обновить страницу": "Refresh the page",
   "увеличить": "increment",
-  "уменьшить": "decrement"
+  "уменьшить": "decrement",
+  "Введите username": "Username",
+  "Введите пароль": "Password"
 }
