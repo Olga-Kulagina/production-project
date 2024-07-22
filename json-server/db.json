@@ -15,6 +15,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Oogway",
+    "lastname": "master",
+    "age": 100,
+    "currency": "RUB",
+    "country": "China",
+    "city": "Peking",
+    "username": "admin",
+    "avatar": "https://static.wikia.nocookie.net/kung-fu-panda/images/a/a8/56802857_1269265498_ugvey.jpg/revision/latest/scale-to-width-down/250?cb=20111217060130&path-prefix=ru"
   }
 }
