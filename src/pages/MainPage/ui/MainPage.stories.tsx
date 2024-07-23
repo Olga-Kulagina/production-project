@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import MainPage from './MainPage';
 
@@ -13,10 +14,14 @@ const meta: Meta<typeof MainPage> = {
 export default meta;
 type Story = StoryObj<typeof MainPage>;
 
-export const Light: Story = {};
+export const Light: Story = {
+    decorators: [
+        StoreDecorator({}),
+    ],
+};
 
 export const Dark: Story = {
     decorators: [
-        ThemeDecorator(Theme.DARK),
+        ThemeDecorator(Theme.DARK), StoreDecorator({}),
     ],
 };
