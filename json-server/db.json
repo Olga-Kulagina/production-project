@@ -1,11 +1,27 @@
 {
   "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
   "users": [
     {
@@ -17,11 +33,11 @@
   "profile": {
     "first": "Oogway",
     "lastname": "old sick turtle",
-    "age": 100,
+    "age": 1000,
     "currency": "RUB",
     "country": "China",
     "city": "Peking",
     "username": "admin",
-    "avatar": "https://static.wikia.nocookie.net/kung-fu-panda/images/a/a8/56802857_1269265498_ugvey.jpg/revision/latest/scale-to-width-down/250?cb=20111217060130&path-prefix=ru"
+    "avatar": "https://static4.tgstat.ru/channels/_0/ee/ee667237e34176164d6aec579e5d72ad.jpg"
   }
 }
