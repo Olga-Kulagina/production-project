@@ -41,16 +41,16 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     };
 
     useEffect(() => {
-        dispatch(fetchProfileData());
+        if (__PROJECT__ !== 'storybook') {
+            dispatch(fetchProfileData());
+        }
     }, [dispatch]);
 
     const onChangeFirstName = useCallback((value?: string) => {
-        console.log(1)
         dispatch(profileActions.updateProfile({ first: value || '' }));
     }, [dispatch]);
 
     const onChangeLastName = useCallback((value?: string) => {
-        console.log(2)
         dispatch(profileActions.updateProfile({ lastname: value || '' }));
     }, [dispatch]);
     const onChangeAge = useCallback((value?: string) => {
