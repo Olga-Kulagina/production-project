@@ -2,16 +2,17 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Article, ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
-import ArticleDetailsPage from './ArticleDetailsPage';
+import { ArticleDetails } from './ArticleDetails';
 
-const meta: Meta<typeof ArticleDetailsPage> = {
-    title: 'pages/ArticleDetailsPage',
-    component: ArticleDetailsPage,
+const meta: Meta<typeof ArticleDetails> = {
+    title: 'entities/ArticleDetails',
+    component: ArticleDetails,
     tags: ['autodocs'],
 };
+
+export default meta;
+type Story = StoryObj<typeof ArticleDetails>;
 
 const article: Article = {
     id: '1',
@@ -83,10 +84,7 @@ const article: Article = {
     ],
 };
 
-export default meta;
-type Story = StoryObj<typeof ArticleDetailsPage>;
-
-export const Light: Story = {
+export const Primary: Story = {
     decorators: [
         StoreDecorator({
             articleDetails: {
@@ -95,12 +93,20 @@ export const Light: Story = {
         }),
     ],
 };
-
-export const Dark: Story = {
+export const Loading: Story = {
     decorators: [
-        ThemeDecorator(Theme.DARK), StoreDecorator({
+        StoreDecorator({
             articleDetails: {
-                data: article,
+                isLoading: true,
+            },
+        }),
+    ],
+};
+export const Error: Story = {
+    decorators: [
+        StoreDecorator({
+            articleDetails: {
+                error: 'error',
             },
         }),
     ],
