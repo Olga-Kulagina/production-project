@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,24 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "ha ha",
+      "id": "0QDz2AB"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "ha ha 2",
+      "id": "mAH3mUh"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "привет мир",
+      "id": "deAtExp"
     }
   ],
   "users": [
@@ -115,17 +135,31 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://static.wikia.nocookie.net/heroes-and-villain/images/2/28/Profile_-_Po.png/revision/latest?cb=20230223201331"
+      "avatar": "https://upload.wikimedia.org/wikipedia/en/3/3d/Po_from_DreamWorks_Animation%27s_Kung_Fu_Panda.png"
     }
   ],
-  "profile": {
-    "first": "Oogway",
-    "lastname": "old sick turtle",
-    "age": 1000,
-    "currency": "RUB",
-    "country": "China",
-    "city": "Peking",
-    "username": "admin",
-    "avatar": "https://static4.tgstat.ru/channels/_0/ee/ee667237e34176164d6aec579e5d72ad.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Oogway",
+      "lastname": "old sick turtle",
+      "age": 1000,
+      "currency": "RUB",
+      "country": "China",
+      "city": "Peking",
+      "username": "admin",
+      "avatar": "https://static4.tgstat.ru/channels/_0/ee/ee667237e34176164d6aec579e5d72ad.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Po",
+      "lastname": "panda",
+      "age": 18,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "user",
+      "avatar": "https://upload.wikimedia.org/wikipedia/en/3/3d/Po_from_DreamWorks_Animation%27s_Kung_Fu_Panda.png"
+    }
+  ]
 }
