@@ -11,6 +11,11 @@ const article: Article = {
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     createdAt: '26.02.2022',
+    user: {
+        id: '1',
+        username: 'Oogway',
+        avatar: 'https://static4.tgstat.ru/channels/_0/ee/ee667237e34176164d6aec579e5d72ad.jpg',
+    },
     type: [ArticleType.IT],
     blocks: [
         {

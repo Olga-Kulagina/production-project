@@ -42,6 +42,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
+        'react/no-array-index-key': 'off',
     },
     globals: {
         __IS_DEV__: true,

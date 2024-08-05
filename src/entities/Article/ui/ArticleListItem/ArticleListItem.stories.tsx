@@ -1,17 +1,19 @@
 /* eslint-disable max-len */
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { ArticleList } from 'entities/Article/ui/ArticleList/ArticleList';
+import type { Meta, StoryObj } from '@storybook/react';
+import {
+    Article, ArticleBlockType, ArticleType, ArticleView,
+} from 'entities/Article/model/types/article';
+import AvatarImage from 'shared/assets/tests/avatar.jpg';
+import { ArticleListItem } from './ArticleListItem';
 
-import { Article } from 'entities/Article';
-import { ArticleBlockType, ArticleType, ArticleView } from 'entities/Article/model/types/article';
+const meta: Meta<typeof ArticleListItem> = {
+    title: 'entities/ArticleListItem',
+    component: ArticleListItem,
+    tags: ['autodocs'],
+};
 
-import cls from './ArticlesPage.module.scss';
-
-interface ArticlesPageProps {
-  className?: string;
-}
+export default meta;
+type Story = StoryObj<typeof ArticleListItem>;
 
 const article: Article = {
     id: '1',
@@ -23,7 +25,7 @@ const article: Article = {
     user: {
         id: '1',
         username: 'Oogway',
-        avatar: 'https://static4.tgstat.ru/channels/_0/ee/ee667237e34176164d6aec579e5d72ad.jpg',
+        avatar: AvatarImage,
     },
     type: [ArticleType.IT],
     blocks: [
@@ -88,25 +90,16 @@ const article: Article = {
     ],
 };
 
-const ArticlesPage = (props: ArticlesPageProps) => {
-    const { className } = props;
-    const { t } = useTranslation('article');
-
-    return (
-        <div className={classNames(cls.ArticlesPage, {}, [className])}>
-            <ArticleList
-            isLoading
-                view={ArticleView.BIG}
-                articles={
-                    new Array(16).fill(0)
-                        .map((item, index) => ({
-                            ...article,
-                            id: String(index),
-                        }))
-                }
-            />
-        </div>
-    );
+export const Big: Story = {
+    args: {
+        article,
+        view: ArticleView.BIG,
+    },
 };
 
-export default memo(ArticlesPage);
+export const Small: Story = {
+    args: {
+        article,
+        view: ArticleView.SMALL,
+    },
+};
