@@ -2,7 +2,20 @@
   "Статьи": "Article",
   "Статья": "Articles",
   "Статья не найдена": "Article not found",
+  "Статьи не найдены": "Articles not found",
   "Произошла ошибка при загрузке статьи": "There was an error loading the article",
   "Комментарии": "Comments",
-  "Назад к списку": "Back to list"
+  "Назад к списку": "Back to list",
+  "Сортировать ПО": "Sort BY",
+  "Поиск": "Search",
+  "по": "by",
+  "возрастанию": "ascending",
+  "убыванию": "descending",
+  "дате создания": "creation date",
+  "названию": "title",
+  "просмотрам": "views",
+  "Все статьи": "All",
+  "IT": "IT",
+  "Экономика": "Economics",
+  "Наука": "Science"
 }
