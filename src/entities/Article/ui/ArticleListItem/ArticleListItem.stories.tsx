@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
+import AvatarImage from 'shared/assets/tests/avatar.jpg';
 import type { Meta, StoryObj } from '@storybook/react';
 import {
     Article, ArticleBlockType, ArticleType, ArticleView,
-} from 'entities/Article/model/types/article';
-import AvatarImage from 'shared/assets/tests/avatar.jpg';
+} from '../../model/types/article';
 import { ArticleListItem } from './ArticleListItem';
 
 const meta: Meta<typeof ArticleListItem> = {

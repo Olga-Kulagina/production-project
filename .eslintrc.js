@@ -13,7 +13,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'lisen-path-checker'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -44,6 +44,7 @@ module.exports = {
         'max-len': ['error', { ignoreComments: true, code: 125 }],
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
+        'lisen-path-checker/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
