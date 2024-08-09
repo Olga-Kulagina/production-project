@@ -47,6 +47,7 @@ module.exports = {
                     'justify',
                     'gap',
                     'role',
+                    'as',
                 ],
             }],
         'jsx-a11y/no-static-element-interactions': 'off',
