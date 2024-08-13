@@ -8,16 +8,17 @@ import { Text } from 'shared/ui/Text/Text';
 import { HStack } from 'shared/ui/Stack';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 
-import {
-    getProfileData, getProfileReadonly, profileActions, updateProfileData,
-} from 'entities/Profile';
 import { getUserAuthData } from 'entities/User';
+import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
+import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
+import { updateProfileData } from '../../model/services/updateProfileData/updateProfileData';
+import { profileActions } from '../../model/slice/profileSlice';
 
-interface ProfilePageHeaderProps {
+interface EditableProfileCardHeaderProps {
   className?: string
 }
 
-export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
+export const EditableProfileCardHeader = (props: EditableProfileCardHeaderProps) => {
     const { t } = useTranslation('profile');
     const dispatch = useAppDispatch();
 
