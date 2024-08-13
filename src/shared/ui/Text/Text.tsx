@@ -27,6 +27,8 @@ interface TextProps {
   theme?: TextTheme;
   align?: TextAlign;
   size?: TextSize;
+
+  'data-testId'?: string;
 }
 
 type HeaderTagType = 'h1' | 'h2' | 'h3';
@@ -39,7 +41,11 @@ const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
 
 export const Text = memo((props: TextProps) => {
     const {
-        className, title, text, theme = TextTheme.PRIMARY, align = TextAlign.LEFT, size = TextSize.M,
+        className,
+        title,
+        text,
+        theme = TextTheme.PRIMARY,
+        align = TextAlign.LEFT, size = TextSize.M, 'data-testId': dataTestId = 'Text',
     } = props;
 
     const HeaderTag = mapSizeToHeaderTag[size];
@@ -52,8 +58,22 @@ export const Text = memo((props: TextProps) => {
 
     return (
         <div className={classNames(cls.Text, mods, [className])}>
-            {title && <HeaderTag className={cls.title}>{title}</HeaderTag>}
-            {text && <p className={cls.text}>{text}</p>}
+            {title && (
+                <HeaderTag
+                    className={cls.title}
+                    data-testId={`${dataTestId}.Header`}
+                >
+                    {title}
+                </HeaderTag>
+            )}
+            {text && (
+                <p
+                    className={cls.text}
+                    data-testId={`${dataTestId}.Paragraph`}
+                >
+                    {text}
+                </p>
+            )}
         </div>
     );
 });

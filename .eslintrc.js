@@ -48,6 +48,7 @@ module.exports = {
                     'gap',
                     'role',
                     'as',
+                    'data-testId',
                 ],
             }],
         'jsx-a11y/no-static-element-interactions': 'off',
