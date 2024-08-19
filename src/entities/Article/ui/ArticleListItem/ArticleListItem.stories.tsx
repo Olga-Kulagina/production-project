@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import AvatarImage from 'shared/assets/tests/avatar.jpg';
 import type { Meta, StoryObj } from '@storybook/react';
+import AvatarImage from '@/shared/assets/tests/avatar.jpg';
 import { ArticleView, ArticleType, ArticleBlockType } from '../../model/consts/articleConsts';
 
 import {

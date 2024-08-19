@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import AvatarImage from 'shared/assets/tests/avatar.jpg';
+import AvatarImage from '@/shared/assets/tests/avatar.jpg';
 import { CommentCard } from './CommentCard';
 
 const meta: Meta<typeof CommentCard> = {
