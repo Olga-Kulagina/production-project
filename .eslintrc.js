@@ -49,6 +49,7 @@ module.exports = {
                     'role',
                     'as',
                     'data-testId',
+                    'border',
                 ],
             }],
         'jsx-a11y/no-static-element-interactions': 'off',
