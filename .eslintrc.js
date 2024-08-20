@@ -61,7 +61,7 @@ module.exports = {
         'max-len': ['error', { ignoreComments: true, code: 125 }],
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'lisen-path-checker/path-checker': 'error',
+        'lisen-path-checker/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
