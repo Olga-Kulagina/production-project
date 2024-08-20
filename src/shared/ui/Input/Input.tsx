@@ -12,11 +12,12 @@ interface InputProps extends HTMLInputProps {
   onChange?: (value: string) => void;
   autofocus?: boolean;
   readonly?: boolean;
+  fullWidth?: boolean;
 }
 
 export const Input = memo((props: InputProps) => {
     const {
-        className, value, onChange, type = 'text', placeholder, autofocus, readonly, ...otherProps
+        className, value, onChange, type = 'text', placeholder, autofocus, readonly, fullWidth, ...otherProps
     } = props;
 
     const ref = useRef<HTMLInputElement>(null);
@@ -28,6 +29,7 @@ export const Input = memo((props: InputProps) => {
 
     const mods: Mods = {
         [cls.readonly]: readonly,
+        [cls.fullWidth]: fullWidth,
     };
 
     useEffect(() => {
@@ -39,7 +41,7 @@ export const Input = memo((props: InputProps) => {
 
     return (
         <div
-            className={classNames(cls.InputWrapper, {}, [className])}
+            className={classNames(cls.InputWrapper, { [cls.fullWidth]: fullWidth }, [className])}
         >
             {placeholder && (
                 <div className={cls.placeholder}>

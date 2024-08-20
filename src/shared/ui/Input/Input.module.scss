@@ -4,6 +4,7 @@
 
 .placeholder {
   margin-right: 5px;
+  text-wrap: nowrap;
 }
 
 .readonly {
@@ -16,4 +17,8 @@
   color: var(--primary-color);
   padding: 2px;
   border: 1px solid var(--primary-color);
+}
+
+.fullWidth {
+  width: 100%;
 }

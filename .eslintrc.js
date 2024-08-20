@@ -48,7 +48,7 @@ module.exports = {
                     'gap',
                     'role',
                     'as',
-                    'data-testId',
+                    'data-testid',
                     'border',
                 ],
             }],

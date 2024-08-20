@@ -24,7 +24,7 @@ export function buildBabelLoader({ isTsx }: buildBabelLoaderProps) {
                     [
                         babelRemovePropsPlugin,
                         {
-                            props: ['data-testId'],
+                            props: ['data-testid'],
                         },
                     ],
                 ],
