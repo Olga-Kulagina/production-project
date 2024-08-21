@@ -1,13 +1,11 @@
 /* eslint-disable max-len */
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Article } from '@/entities/Article/model/types/article';
+import { Article, ArticleType, ArticleBlockType } from '@/entities/Article';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 import { Theme } from '@/app/providers/ThemeProvider';
 
-import { ArticleType } from '@/entities/Article';
-import { ArticleBlockType } from '@/entities/Article/model/consts/articleConsts';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 const meta: Meta<typeof ArticleDetailsPage> = {

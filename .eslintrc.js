@@ -62,6 +62,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'lisen-path-checker/path-checker': ['error', { alias: '@' }],
+        'lisen-path-checker/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
