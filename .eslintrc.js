@@ -62,11 +62,18 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'lisen-path-checker/path-checker': ['error', { alias: '@' }],
+        'lisen-path-checker/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'lisen-path-checker/public-api-imports': [
             'error',
             {
                 alias: '@',
-                testFilesPatterns: ['**/*.test.ts', '**/StoreDecorator.tsx'],
+                testFilesPatterns: ['**/*.test.*', '**/*.story/*', '**/StoreDecorator.tsx'],
             },
         ],
     },

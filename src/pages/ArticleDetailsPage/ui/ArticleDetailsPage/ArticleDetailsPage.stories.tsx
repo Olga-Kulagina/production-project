@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Article, ArticleType, ArticleBlockType } from '@/entities/Article';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
-import { Theme } from '@/app/providers/ThemeProvider';
+import { Theme } from '@/shared/const/theme';
 
 import ArticleDetailsPage from './ArticleDetailsPage';
 
