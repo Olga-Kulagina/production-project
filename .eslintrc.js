@@ -62,7 +62,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'lisen-path-checker/path-checker': ['error', { alias: '@' }],
-        'lisen-path-checker/public-api-imports': ['error', { alias: '@' }],
+        'lisen-path-checker/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.ts', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
